@@ -1,212 +1,346 @@
 // config.js (Students edit only this file)
+
 window.SITE_CONFIG = {
-  pageTitle: "Academic Digital Twin Case Study | Student Showcase",
+  pageTitle: "Traffic Simulation Case Study | SMRTTECH 4SC3",
   homeUrl: "https://roadwayvr.com",
 
   hero: {
     profileImage: "assets/img/image1.jpg",
 
-    // NEW: course code tag shown above the course project pill
     courseTag: "SMRTTECH 4SC3",
 
-    // updated tagline text (big pill)
     tagline: "Course Project: Smart Cities and Communities",
 
     studentName: "Aaron Sohail",
-    program: "Btech Automation Engineering",
+    program: "BTech Automation Engineering",
     university: "McMaster University, Canada",
     email: "sohaia11@mcmaster.ca"
   },
 
   disclaimer: {
     short:
-      "Academic project for a university course. Educational purposes only. Not an official city analysis, consultation, or endorsement.",
+      "This academic project was completed for educational purposes. The findings are based on traffic simulations and do not represent official traffic assessments.",
+
     long:
-      "This website presents a student academic project created for coursework. Any analyses, results, and potential improvements are simulation-based and provided for educational purposes only. They do not represent official work, endorsement, or consultation for any city or agency.",
+      "This website presents an academic traffic simulation project completed at McMaster University. All scenarios, results, and recommendations are based on simulation data and are intended for educational purposes only. The findings do not represent official traffic studies, engineering recommendations, or endorsements by the City of Toronto.",
+
     videoOverlaySuggestion:
-      "Academic Project · Educational Use Only · Not Official City Work"
+      "Academic Project | Educational Use Only | Simulation-Based Results"
   },
 
+  // Updated grey colour theme
   theme: {
-    heroBg: "#111111",
+    heroBg: "#454b54",
     heroText: "#ffffff",
     pageBg: "#f8fafc",
-    accent: "#7c3aed"
+    accent: "#64748b"
   },
 
   dividers: {
-    dividerBg: "#f9f9f9",
-    dividerText: "#ffffff"
+    dividerBg: "#e5e7eb",
+    dividerText: "#374151"
   },
 
   footer: {
-	  footerBg: "#111111",
-	  footerText: "#ffffff",
-	  footerBorder: "#222222",
-	
-	  homeLinkText: "RoadwayVR",
-	
-	  templateCredit:
-	    "This academic showcase template was developed by RoadwayVR.",
-	
-	  templateCreditLinkText:
-	    "Learn more at RoadwayVR.com",
-	
-	  templateCreditUrl:
-	    "https://roadwayvr.com"
+    footerBg: "#454b54",
+    footerText: "#ffffff",
+    footerBorder: "#64748b",
+
+    homeLinkText: "RoadwayVR",
+
+    templateCredit:
+      "This academic showcase template was developed by RoadwayVR.",
+
+    templateCreditLinkText:
+      "Learn more at RoadwayVR.com",
+
+    templateCreditUrl:
+      "https://roadwayvr.com"
   },
 
+  // Project Introduction
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+
+    projectTitle:
+      "Traffic Simulation and Scenario Analysis at Bayview Avenue and Finch Avenue East",
+
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
-    heroVideoAlt: "Autoplay preview video (academic project)",
+    heroVideoAlt: "Traffic simulation project overview",
+
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Project Overview: Road Network Development, Traffic Simulation, Scenario Comparison, and Results"
   },
 
+  // Introduction Section
   caseStudy: {
     title: "Introduction",
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+      "Traffic congestion at urban intersections affects vehicle movement, travel time, and overall road efficiency.",
+
+      "Traffic simulation tools such as SUMO allow roadway networks and vehicle behaviour to be studied under different conditions.",
+
+      "Connected and autonomous vehicles (CAVs) may influence traffic flow through changes in vehicle spacing and driving behaviour.",
+
+      "This project focuses on the Bayview Avenue and Finch Avenue East intersection in Toronto, Ontario."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+      "Urban intersections experience congestion due to traffic demand, signal timing, and vehicle interactions.",
+
+      "Accurate roadway networks are needed to represent lane connections, turning movements, and traffic flow.",
+
+      "The impact of connected and autonomous vehicles on traffic performance is uncertain.",
+
+      "Traffic signal adjustments must be evaluated to determine whether they improve simulated road conditions."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+      "Develop a digital roadway network of the Bayview Avenue and Finch Avenue East intersection using SUMO.",
+
+      "Establish a baseline traffic simulation using 100% human-driven vehicles (HDVs).",
+
+      "Compare traffic performance between 100% HDV and 100% CAV scenarios using speed-density relationships.",
+
+      "Evaluate a traffic signal timing adjustment and assess its impact on traffic conditions."
     ]
   },
 
+  // Methodology Overview
   overview: {
     title: "Methodology",
+
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+        title: "Step 1: Road Network Development",
+
+        text:
+          "Develop the Bayview Avenue and Finch Avenue East roadway network in SUMO, including road geometry, lanes, and turning connections.",
+
         image: "assets/img/image2.jpg"
       },
+
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
+        title: "Step 2: Baseline Traffic Simulation (HDV)",
+
+        text:
+          "Simulate human-driven vehicle traffic and establish baseline speed-density results for the selected roadway edge.",
+
         image: "assets/img/image3.jpg"
       },
+
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+        title: "Step 3: Connected and Autonomous Vehicle Simulation",
+
+        text:
+          "Test a 100% CAV scenario and compare its speed-density relationship with the HDV baseline.",
+
         image: "assets/img/image4.jpg"
       },
+
       {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
+        title: "Step 4: Traffic Signal Intervention",
+
+        text:
+          "Adjust traffic signal timing and evaluate changes in simulated traffic performance.",
+
         image: "assets/img/image5.jpg"
       }
     ]
   },
 
+  // Detailed Methodology
   implementation: {
-    title: "Methodology Steps (Demo Modules)",
+    title: "Methodology Steps (Simulation Modules)",
+
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Road Network Development (SUMO)",
+
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+          {
+            text:
+              "Use the study-area GIS map to develop the Bayview Avenue and Finch Avenue East roadway network in SUMO NetEdit."
+          },
+
+          {
+            text:
+              "Create road connections, lane configurations, turning movements, and intersection geometry."
+          },
+
+          {
+            text:
+              "Review road continuity and vehicle connections to support realistic traffic movement."
+          }
         ],
+
         image: "assets/img/image2.jpg"
       },
+
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: Baseline Traffic Simulation (100% HDV)",
+
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          {
+            text:
+              "Configure traffic demand, vehicle routes, and traffic signal controls for the study intersection."
+          },
+
+          {
+            text:
+              "Run the baseline simulation using 100% human-driven vehicles."
+          },
+
+          {
+            text:
+              "Collect vehicle speed and density observations from the selected roadway edge E66."
+          }
         ],
+
         image: "assets/img/image3.jpg"
       },
+
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: Connected and Autonomous Vehicle Simulation",
+
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+          {
+            text:
+              "Replace the baseline vehicle type with 100% connected and autonomous vehicles."
+          },
+
+          {
+            text:
+              "Adjust vehicle behaviour parameters, including minimum spacing, time headway, acceleration, and deceleration."
+          },
+
+          {
+            text:
+              "Compare HDV and CAV speed-density results under the same reported roadway and traffic conditions."
+          }
         ],
+
         image: "assets/img/image4.jpg"
       },
+
       {
-        title: "Module 4: Results & Communication",
+        title: "Module 4: Traffic Signal Timing Intervention",
+
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          {
+            text:
+              "Identify congestion along the selected roadway edge E66 using baseline simulation results."
+          },
+
+          {
+            text:
+              "Increase the traffic signal green time serving E66 from 27 seconds to 30 seconds."
+          },
+
+          {
+            text:
+              "Compare the baseline and adjusted scenarios to evaluate potential improvements in traffic performance."
+          }
         ],
+
         image: "assets/img/image5.jpg"
       }
     ]
   },
 
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+  // Results Section
+  results: {
+    title: "Results & Potential Improvements",
 
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
+    subtitle:
+      "Speed-density results from the SUMO simulations were used to compare human-driven vehicles, connected and autonomous vehicles, and a traffic signal timing intervention at the Bayview Avenue and Finch Avenue East intersection.",
 
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
-		},
+    charts: {
+      left: {
+        title:
+          "Baseline Scenario — 100% Human-Driven Vehicles (HDV)",
 
+        src: "assets/img/image6.jpg",
+
+        alt:
+          "Speed-density graph for the baseline human-driven vehicle simulation on edge E66."
+      },
+
+      right: {
+        title:
+          "Scenario 1 — 100% Connected and Autonomous Vehicles (CAV)",
+
+        src: "assets/img/image7.jpg",
+
+        alt:
+          "Speed-density graph for the connected and autonomous vehicle simulation on edge E66."
+      }
+    },
+
+    discussionTitle: "Results & Discussion",
+
+    discussionBullets: [
+      "The HDV baseline produced a fitted free-flow speed of 8.0 m/s and a jam density of 83 vehicles/km.",
+
+      "The CAV scenario produced a fitted free-flow speed of 7.4 m/s and a higher jam density of 92 vehicles/km.",
+
+      "At lower traffic densities, the HDV scenario showed slightly higher predicted speeds, while the CAV scenario performed slightly better at higher densities.",
+
+      "The traffic signal intervention increased the green time serving edge E66 from 27 to 30 seconds.",
+
+      "Following the signal adjustment, the fitted free-flow speed increased from 8.0 to 10.0 m/s. However, the overall results were mixed and did not confirm a consistent improvement.",
+
+      "Further testing using additional simulation runs, queue lengths, vehicle delays, and traffic volumes would help determine whether the signal adjustment provides reliable benefits."
+    ]
+  },
+
+  // Team and Acknowledgments
   team: {
     title: "Team & Acknowledgments",
+
     subtitle:
-      "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
+      "This project was completed as part of SMRTTECH 4SC3 at McMaster University. The study involved roadway network development, traffic simulation, scenario comparison, and analysis of potential traffic improvements.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      {
+        name: "Aaron Sohail",
+        role:
+          "Road Network Development, Traffic Simulation, Scenario Analysis, and Results"
+      },
+
+      {
+        name: "Kevin Nguyen",
+        role:
+          "Project Team Member"
+      },
+
+      {
+        name: "Tri Pham",
+        role:
+          "Project Team Member"
+      }
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
-      "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Course: SMRTTECH 4SC3 – Smart Cities and Communities",
+
+      "Institution: McMaster University",
+
+      "Study Location: Bayview Avenue and Finch Avenue East, Toronto, Ontario",
+
+      "Simulation Software: SUMO and SUMO NetEdit",
+
+      "Analysis: Greenshields Speed-Density Model",
+
+      "Project Type: Academic Traffic Simulation and Scenario Analysis"
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/REPO"
+    repoUrl: ""
   }
 };
